@@ -9,12 +9,12 @@
     $mail->isSMTP(); // send as HTML
     $mail->Host = "smtp.gmail.com"; // SMTP servers
     $mail->SMTPAuth = true; // turn on SMTP authentication
-    $mail->Username = "Your mail"; // Your mail
-    $mail->Password = 'Your password mail'; // Your password mail
+    $mail->Username = "jitchoudhary99@gmail.com"; // Your mail
+    $mail->Password = 'jit@VITJ.AC.IN'; // Your password mail
     $mail->Port = 587; //specify SMTP Port
     $mail->SMTPSecure = 'tls';                               
     $mail->setFrom($_POST['email'],$_POST['name']);
-    $mail->addAddress('Your mail');
+    $mail->addAddress('jitchoudhary99@gmail.com ');
     $mail->addReplyTo($_POST['email'],$_POST['name']);
     $mail->isHTML(true);
     $mail->Subject='Form Submission:' .$_POST['subject'];
@@ -51,7 +51,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<!--=========================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--=========================================================================================-->
 </head>
 <body>
@@ -126,7 +126,7 @@
 </script>
 
 <!--=========================================================-->
-	<script src="js/main.js"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>
